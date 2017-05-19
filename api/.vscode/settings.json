@@ -1,0 +1,11 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.autoSave": "onFocusChange",
+    "nodeTdd.buildOnActivation": true,
+    "nodeTdd.testScript": "test",
+    "nodeTdd.glob": "test/*.js",
+    "nodeTdd.verbose":true,
+    "mocha.options": {},
+    "mocha.glob": "test/*.js",
+    "eslint.enable": true
+}

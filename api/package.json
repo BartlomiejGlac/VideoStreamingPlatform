@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "mocha test",
+    "start": "nodemon src/app.js"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -11,13 +12,18 @@
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "jade": "~1.11.0",
+    "mongoose": "^4.9.9",
     "morgan": "~1.8.1",
     "multer": "^1.3.0",
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "busboy": "^0.2.14",
+    "del": "^2.2.2",
     "mocha": "^3.3.0",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1",
     "supertest": "^3.0.0"
   }
 }
