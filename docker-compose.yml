@@ -1,16 +1,21 @@
 version: "2"
 services:
   web:
-    build: ./VideoStreamingPlatform
+    build: ./api
     ports:
       - "3000:3000"
     links:
       - mongo
     volumes:
-     - /uploads:/app/uploads
+     - ./uploads:/app/uploads
+     - ./api/src:/app/src
   mongo:
     image: mongo
     volumes:
-      - /MongoDB:/data/db
+      - mongodata:/data/db
     ports:
       - "27017:27017"
+volumes:
+    mongodata: {}
+    uploads: {}
+    

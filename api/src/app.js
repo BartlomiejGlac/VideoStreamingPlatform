@@ -5,9 +5,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var videos = require('./routes/videos');
+//This chooses the database to use for storing data a very important step
+
 var app = express();
 app.listen(3000);
-
+app.use(express.static('public/'))
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
